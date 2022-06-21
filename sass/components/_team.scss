@@ -55,19 +55,18 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-}
-
-.team__list {
-    & .team__item + .team__item {
-        margin-left: 30px;
+    &__item:not(:last-child) {
+    margin-right: 30px;
     }
 }
+
 
 .team-network {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding-left: 0;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 30px;
     margin-top: 16px;
         &__link {
@@ -94,19 +93,9 @@
         }
 }
 
-
-// .team-network__link:hover,
-// .team-network__link:focus {
-//     fill: var(--main-white-color);
-// }
-
 .team-network__wrapper {
     display: flex;
     text-align: center;
         &:hover {
         color:$accent-color;}
 }
-
-// .team-network__wrapper:hover {
-//     color: var(--accent-color);
-// }
