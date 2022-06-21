@@ -29,8 +29,10 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    padding: 40px;}
     
+
+.modal{
     &__button {
         width: 30px;
         height: 30px;
@@ -41,8 +43,8 @@
         background: $main-white-color;
         border: 1px solid rgba(0, 0, 0, 0.1);
         position: absolute;
-        top: 10px;
-        right: 15px;
+        top: 8px;
+        right: 8px;
         padding: 5px;
         transition: fill $transition;
             &:hover,
@@ -72,7 +74,6 @@
             &:last-child {
             margin-top: 0;} 
         }
-    
     &__wrapper {
         display: flex;
         justify-content: center;
@@ -90,7 +91,7 @@
             &:hover {
                 fill: $accent-color;
             }
-    }
+        }
     &__input {
         width: 448px;
         height: 40px;
@@ -108,9 +109,9 @@
         }
 }
 
-// .modal__input:hover+.modal__image {
-//     fill: var(--accent-color);
-// }
+.modal__input:hover+.modal__image {
+    fill: $accent-color;
+}
 
 .modal__coments {
     width: 448px;
@@ -122,11 +123,10 @@
     outline: none;
     color: $little-text-color;
     cursor: pointer;
-    
     transition: border-color $transition;
         &:hover,
         &:focus {border: 1px solid $accent-color}
-    &::placeholder {
+        &::placeholder {
         font-family: $mainfont;
         font-style: normal;
         font-weight: 400;
@@ -200,10 +200,9 @@
     padding: 0;
 }
 
-// .chekbox__hidden:checked+.chekbox__image {
-//     opacity: 1;
-//     background-color: #2196F3;
-// }
-
+.chekbox__hidden:checked+.chekbox__image {
+    opacity: 1;
+    background-color: #2196F3;
+}
 
 

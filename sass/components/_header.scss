@@ -6,11 +6,9 @@ background-color: $main-white-color;
 border-bottom: 1px solid $border-color;
 }
 
-.container {
-    &.container--nav {
+.nav {
     @include CenterFlex ();
     }
-}
 
 .logo {
     &__inner {
