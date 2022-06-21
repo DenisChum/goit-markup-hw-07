@@ -207,7 +207,7 @@ fill: var(--accent-color);
 }
 
 .contact__link:hover,
-.contact__links:focus {
+.contact__link:focus {
 color: var(--accent-color);
 }
 
